@@ -66,6 +66,7 @@ export CPATH="$INCLUDE_PATH"
 export CPPPATH="$INCLUDE_PATH"
 
 chmod +x "$VENDORED_MONO/bin/mono"
+chmod +x "$MONO_DIR/bin/mono"
 
 #build app
 SLN=$(ls $BUILD_DIR/*.sln | head -1)
