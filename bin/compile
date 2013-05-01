@@ -12,8 +12,8 @@ mktmpdir() {
 }
 
 # config
-MONO_VERSION="2.10.8"
-S3_BUCKET="bh-buildpack-mono"
+MONO_VERSION="2.10.12"
+S3_BUCKET="seppoker-mono"
 
 # parse and derive params
 BUILD_DIR=$1
