@@ -50,9 +50,11 @@ INCLUDE_PATH="$BUILD_DIR/mono-build/include"
 export CPATH="$INCLUDE_PATH"     
 export CPPPATH="$INCLUDE_PATH"
 
+chmod +x "$VENDORED_MONO/bin/mono"
+
 #build app
 SLN=$(ls $BUILD_DIR/*.sln | head -1)
-BUILDCMD="$BUILD_DIR/mono-build/bin/mono $BUILD_DIR/mono-build/lib/mono/4.0/xbuild.exe $SLN"
+BUILDCMD="$VENDORED_MONO/bin/mono $VENDORED_MONO/lib/mono/4.0/xbuild.exe $SLN"
 echo "-----> building via $BUILDCMD"
 eval $BUILDCMD
 
