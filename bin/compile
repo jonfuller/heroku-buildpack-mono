@@ -70,7 +70,7 @@ chmod +x "$MONO_DIR/bin/mono"
 
 #build app
 SLN=$(ls $BUILD_DIR/*.sln | head -1)
-BUILDCMD="$MONO_DIR/bin/mono $MONO_DIR/lib/mono/4.0/xbuild.exe $SLN"
+BUILDCMD="$MONO_DIR/bin/mono $MONO_DIR/lib/mono/4.5/xbuild.exe $SLN"
 echo "-----> building via $BUILDCMD"
 eval $BUILDCMD
 
